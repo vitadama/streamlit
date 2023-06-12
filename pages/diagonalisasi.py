@@ -10,7 +10,7 @@ with st.expander('pilih ukuran'):
         st.form_submit_button('kirim ukuran')
 
 if col1 == row1 :
-    st.write('data matrix pertama')
+    st.write('input matrix')
     df_1 = pd.DataFrame(columns=range(1, col1+1), index=range(1, row1+1), dtype=float)
     df_1_input = st.experimental_data_editor( df_1, use_container_width=True, key=1)
     matrix1 = df_1_input.fillna(0).to_numpy()
