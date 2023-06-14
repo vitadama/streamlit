@@ -5,8 +5,8 @@ import numpy as np
 
 with st.expander('pilih ukuran'):
     with st.form('pilih ukuran'):
-        row1 = st.number_input('ukuran baris dari matrix pertama', min_value=2)
-        col1 = st.number_input('ukuran kolom dari matrix pertama', min_value=2)
+        row1 = st.number_input('ukuran baris dari matrix pertama', min_value=1)
+        col1 = st.number_input('ukuran kolom dari matrix pertama', min_value=1)
         st.form_submit_button('kirim ukuran')
 
 
